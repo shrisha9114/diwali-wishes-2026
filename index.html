@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d1c">
+  <title>Happy Diwali 🪔</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="fireworks"></canvas>
+
+  <main class="page">
+    <section class="welcome-card" id="welcomeCard">
+      <div class="diya" aria-hidden="true">🪔</div>
+      <p class="eyebrow">A LITTLE FESTIVE SURPRISE</p>
+      <h1>Let's celebrate<br><span>Diwali!</span></h1>
+      <p class="subtitle">A special wish is waiting for you.</p>
+
+      <form id="wishForm">
+        <label for="nameInput">What's your name?</label>
+        <input id="nameInput" type="text" maxlength="35" placeholder="Enter your name" autocomplete="given-name" required>
+        <button type="submit">Open your wish <span aria-hidden="true">✨</span></button>
+      </form>
+      <p class="tiny-note">Made with love, just for you.</p>
+    </section>
+  </main>
+
+  <div class="overlay" id="wishOverlay" aria-hidden="true">
+    <section class="wish-popup" role="dialog" aria-modal="true" aria-labelledby="wishTitle">
+      <div class="popup-diya" aria-hidden="true">🪔</div>
+      <p class="popup-kicker">WISHING YOU A BRIGHT AND BEAUTIFUL YEAR</p>
+      <h2 id="wishTitle">Happy Diwali!</h2>
+      <p class="wish-message">May your life be filled with light, happiness, peace and prosperity.</p>
+      <button id="againBtn" type="button">Celebrate again ✨</button>
+    </section>
+  </div>
+
+  <script src="js/fireworks.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
